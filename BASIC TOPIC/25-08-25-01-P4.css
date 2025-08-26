@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(243, 225, 228);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(66, 132, 237);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Pinyon Script', cursive;
+    margin: 0 0 20px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.heart-button, .devil-heart-button {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.heart-button::before, .heart-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background-color: #ff0000;
+    z-index: -1;
+}
+
+.heart-button::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart-button::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.devil-heart-button::before, .devil-heart-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background-color: #800000;
+    z-index: -1;
+}
+
+.devil-heart-button::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.devil-heart-button::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.devil-heart-button::before {
+    background-color: #800000;
+}
+
+.devil-heart-button::after {
+    background-color: #800000;
+}
+
+.heart-button:hover, .devil-heart-button:hover {
+    transform: scale(1.1);
+}
