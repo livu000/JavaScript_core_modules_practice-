@@ -1,0 +1,29 @@
+body {
+    background-color: mediumturquoise;
+}
+h2 {
+    color: darkblue;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:nth-child(1) {
+    background-color: lightcoral;
+    height: 100px;
+    width: 200px;
+    padding: 20px 100px green;
+    margin: 20px 100px 20px 100px;
+    border: 5px solid black;
+    color: aliceblue;
+    font-size: 30px;
+}
+button:nth-child(2) {
+    background-color: lightblue;
+    height: 200px;
+    width: 100px;
+    padding: 20px 100px solid black;
+    margin: 20px 100px 20px 100px;
+    border: 5px solid black;
+    color: rgb(247, 4, 57);
+    font-size: 10px;
+}
